@@ -1,6 +1,7 @@
 'use strict';
 const themeswither = document.querySelector('.theme-btn');
 
+
 themeswither.addEventListener('click', function() {
     document.body.classList.toggle('light-theme');
     document.body.classList.toggle('dark-theme');
@@ -14,4 +15,5 @@ themeswither.addEventListener('click', function() {
     }
 
     console.log('current class name: ' + className);
+    console.log();
 });
