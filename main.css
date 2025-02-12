@@ -12,38 +12,62 @@ ul{
     font-family: Arial, Helvetica, sans-serif;
 
 }
-li {
-    list-style: circle;
-  }
-  
-  .List {
-    list-style: square;
-  }
-  
-  #msg {
-    font-family: monospace;
-  }
-  .light-theme {
-    --bg: var(--green);
-    --fontColor: var(--black);
-    --btnBg: var(--black);
-    --btnFontColor: var(--white);
 
-  }
-  .dark-theme{
-    --bg: var(--black);
-    --fontColor: var(--green);
-    --btnBg: var(--white);
-    --btnFontColor: var(--black);
-  }
-.btn {
+.light-theme {
+  --bg: var(--green);
+  --fontColor: var(--black);
+  --btnBg: var(--black);
+  --btnFontColor: var(--white);
+  --btnMainBg: var(--white);
+
+
+}
+.dark-theme{
+  --bg: var(--black);
+  --fontColor: var(--green);
+  --btnBg: var(--white);
+  --btnBorder: var(--green)
+  --btnFontColor: var(--black);
+  --btnMainBg: var(--black);
+  --btnMainFontColor: var(--green);
+}
+.theme-btn {
     position: absolute;
-    top: 20px;
-    left: 250px;
+    top: 0;
+    right: 0%;
+    grid-area: themebtn;
     height: 50px;
     width: 50px;
-    border-radius: 50%;
+    border-radius: 5px;
     border: none;
     color: var(--btnFontColor);
     background-color: var(--btnBg);
+}
+.main-page-btn{
+  text-decoration: none;
+  border: var(--btnBorder);
+  border-radius: 5;
+  background-color: var(--bg);
+  color: var(--btnMainFontColor);
+  font-size: 25px;
+}
+.page-top-bar{
+  position: fixed;
+  display: grid;
+  grid:
+    'mainbtn themebtn';
+  height: 50px;
+  width: 100%;
+  margin: 10px;  
+}
+.main-pg-content{
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  animation: forwards 1s ease-in 0s 1 normal animate-text;
+
+}
+@keyframes animate-text {
+  
+  
 }

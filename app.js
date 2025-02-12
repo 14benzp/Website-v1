@@ -1,5 +1,5 @@
 'use strict';
-const themeswither = document.querySelector('.btn');
+const themeswither = document.querySelector('.theme-btn');
 
 themeswither.addEventListener('click', function() {
     document.body.classList.toggle('light-theme');
