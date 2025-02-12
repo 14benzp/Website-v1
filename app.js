@@ -21,5 +21,5 @@ themeswither.addEventListener('click', function() {
 
 cleartext.addEventListener('click', function() {
     list.children.textContent = "";
-
+    console.log('Clearing text in ' + list.className);
 });
